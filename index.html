@@ -4,6 +4,13 @@
 	<head>
 		<style>
 
+@keyframes fadein {
+			from {	opacity: 0.0;
+					width: 1%}
+			to {	opacity: 1;
+					width 100%;}
+		}
+		
 		h1{
 			
 			text-align:center;
@@ -11,7 +18,7 @@
 			font-family: "Courier New", Courier, monospace;
 			color: black;
 			font-weight: normal;
-			font-size: 300%;
+			font-size: 500%;
 			
 			
 		}
@@ -20,25 +27,29 @@
 			font-family: "Courier New", Courier, monospace;
 			color: #212121;
 			font-weight: lighter;
+			font-size: 200%;
 		}
 		img.displayed{
+		
 		display:block;
 		margin-left: auto;
 		margin-right: auto; 
-		width: 90%;
+		width: 100%;
+		animation-name: fadein;
+		animation-duration: 1s;
 		
 		}
-		div{    
+		#dav{    
 			overflow: hidden;
-            z-index: 10px;
-			width: 70%;
+            
+			width: 500px;
 			
 			background-color: rgba(65,65,65,0.65);
 			box-shadow: 4px 4px 15px black;
 			color: #ffffff;
-			padding: 20px;
+			padding: 30px;
             margin: 0 auto;
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 			}
 		body{
 			background-color: #212121;
